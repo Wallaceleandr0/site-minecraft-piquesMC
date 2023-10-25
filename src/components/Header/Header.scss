@@ -1,0 +1,107 @@
+@import "../../variables.scss";
+
+// $blue-light: #ABB1FA;
+// $blue-light-bold:#8D94DB;
+// $blue-semibold: #6E77BB;
+// $blue-bold: #4F5B9C;
+// $blue-bolder: #303E7C;
+
+.Header {
+    header {
+        background-color: transparent;
+        backdrop-filter: blur(60px);
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        @media(max-width: 500px) {
+            flex-direction: column;
+            padding: 0;
+        }
+        #Header-logo {
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+            text-decoration: none;
+            width: 70px;
+            margin-left: 80px;
+            @media(max-width: 650px) {
+                margin-left: 15px;
+            }
+        }
+        ul {
+            gap: 10px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-right: 80px;
+            a {
+                color: white;
+                transition: .3s ease;
+            }
+            :hover {
+                transform: scale(1.07);
+            }
+            @media(max-width: 650px) {
+                margin-right: 15px;
+            }
+            @media(max-width: 500px) {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+                &.visible {
+                    max-height: 1000px;
+                  }
+                a {
+                    padding: 20px 0;
+                    display: block;
+                    width: 100%;
+                    transition: .3s ease;
+                }
+                :hover {
+                    background-color: #fff;
+                    color: black;
+                }
+            }
+            a {
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+        @media(max-width: 500px) {
+            .Header-logo-a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                #Header-logo {
+                    margin-left: 15px;
+                    padding: 10px;
+                    color: #fff;
+                }
+            }
+            .Header-menu {
+                margin-right: 10px;
+                height: 26px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                .line-menu {
+                    width: 27px;
+                    height: 3px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

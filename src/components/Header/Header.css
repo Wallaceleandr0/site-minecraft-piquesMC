@@ -1,0 +1,106 @@
+.Header header {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+@media (max-width: 500px) {
+  .Header header {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.Header header #Header-logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  width: 70px;
+  margin-left: 80px;
+}
+@media (max-width: 650px) {
+  .Header header #Header-logo {
+    margin-left: 15px;
+  }
+}
+.Header header ul {
+  gap: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-right: 80px;
+}
+.Header header ul a {
+  color: white;
+  transition: 0.3s ease;
+}
+.Header header ul :hover {
+  transform: scale(1.07);
+}
+@media (max-width: 650px) {
+  .Header header ul {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .Header header ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .Header header ul.visible {
+    max-height: 1000px;
+  }
+  .Header header ul a {
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+  .Header header ul :hover {
+    background-color: #fff;
+    color: black;
+  }
+}
+.Header header ul a {
+  text-decoration: none;
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .Header header .Header-logo-a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Header header .Header-logo-a #Header-logo {
+    margin-left: 15px;
+    padding: 10px;
+    color: #fff;
+  }
+  .Header header .Header-menu {
+    margin-right: 10px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .Header header .Header-menu .line-menu {
+    width: 27px;
+    height: 3px;
+    background-color: #fff;
+  }
+}/*# sourceMappingURL=Header.css.map */

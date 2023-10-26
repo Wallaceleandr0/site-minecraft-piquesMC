@@ -1,0 +1,72 @@
+.Banners {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.Banners img {
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  .Banners-discord {
+    order: 2;
+  }
+  .Banners-minigames {
+    order: 1;
+  }
+  .Banners-ads {
+    order: 3;
+  }
+}
+.Banners-discord {
+  background-color: #5A78E3;
+  width: 280px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 621px) {
+  .Banners-discord {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .Banners-discord {
+    height: 350px;
+  }
+}
+.Banners-discord img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+.Banners-minigames img {
+  max-width: 750px;
+  height: 500px;
+}
+@media (max-width: 1100px) {
+  .Banners-minigames img {
+    height: 350px;
+    max-width: 600px;
+  }
+}
+.Banners-ads {
+  background-color: blue;
+  width: 280px;
+  height: 500px;
+  background-image: url("/public/banner-vip.jpeg");
+  background-position: center 12%;
+  background-size: cover;
+}
+@media (max-width: 621px) {
+  .Banners-ads {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .Banners-ads {
+    height: 350px;
+  }
+}/*# sourceMappingURL=Banners.css.map */

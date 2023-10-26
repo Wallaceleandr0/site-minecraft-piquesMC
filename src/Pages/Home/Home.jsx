@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Home.css"
+import Banners from '../../components/Banners/Banners'
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
           <p>+100 PLAYERS ONLINE</p>
           <a href="#">Jogue agora</a>
         </div>
-        <div className="teste"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit eligendi ullam, doloremque ipsa nam non? Atque ullam expedita laudantium provident, quaerat, et impedit deleniti nobis tenetur distinctio voluptate a.</p></div>
+        <Banners />
     </div>
   )
 }

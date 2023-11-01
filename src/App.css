@@ -21,6 +21,10 @@ html {
   background-color: #0D0D0D;
 }
 
+img {
+  width: 100%;
+}
+
 footer {
   color: #fff;
   display: flex;

@@ -1,0 +1,92 @@
+.Torneio-banner {
+  background-image: url("/public/banner-home.png");
+  height: 610px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  color: #fff;
+  text-align: center;
+}
+.Torneio-banner h2 {
+  font-size: 60px;
+  padding: 10px;
+}
+.Torneio-banner p {
+  max-width: 920px;
+  padding: 10px;
+  margin: 0 auto;
+  font-weight: 200;
+}
+.Torneio-flex {
+  padding: 10px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+.Torneio-flex-table {
+  width: 320px;
+}
+@media (max-width: 1308px) {
+  .Torneio-flex-table {
+    width: 70%;
+  }
+}
+.Torneio-flex-table #h4-torneio {
+  margin-bottom: 25px;
+  background-color: #c6c4c4;
+}
+.Torneio-flex-table h4 {
+  font-size: 22px;
+  padding: 15px 0;
+  width: 100%;
+}
+.Torneio-flex-table-list {
+  padding-bottom: 15px;
+  background-color: #c6c4c4;
+}
+.Torneio-flex-table-list-box {
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: gray;
+}
+.Torneio-flex-participate {
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+.Torneio-flex-participate img {
+  width: 100%;
+}
+.Torneio-flex-participate #banner-participate {
+  height: 350px;
+  max-width: 900px;
+}
+.Torneio-flex-participate p {
+  margin-top: 20px;
+  max-width: 900px;
+  color: #fff;
+}
+.Torneio-flex-participate a {
+  text-decoration: none;
+  margin: 60px auto 0 auto;
+  width: 150px;
+  display: block;
+  text-align: center;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  background-color: #c6c4c4;
+  transition: 0.3s ease;
+}
+.Torneio-flex-participate a:hover {
+  transform: scale(1.07);
+}/*# sourceMappingURL=Torneio.css.map */
